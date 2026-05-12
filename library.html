@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>万代多賀城店カードコーナー｜未開封BOX買取価格</title>
+
+<style>
+body{
+  margin:0;
+  font-family:"Noto Sans JP",system-ui,sans-serif;
+  background:#f7f1df;
+  color:#2b1a12;
+}
+
+header{
+  background:linear-gradient(180deg,#fff,#fff7e6);
+  text-align:center;
+  padding:22px 12px 14px;
+  border-bottom:3px solid #f0dca8;
+}
+
+.shop{
+  font-size:17px;
+  font-weight:900;
+}
+
+h1{
+  margin:6px 0 8px;
+  font-size:28px;
+  color:#d71920;
+}
+
+.notice{
+  max-width:900px;
+  margin:8px auto 0;
+  background:#fff;
+  border:2px solid #f0dca8;
+  border-radius:14px;
+  padding:10px 12px;
+  font-size:13px;
+  line-height:1.55;
+  color:#5a3b22;
+  text-align:left;
+}
+
+.wrap{
+  max-width:1100px;
+  margin:0 auto;
+  padding:14px;
+}
+
+.searchBox{
+  background:#fff;
+  border-radius:18px;
+  padding:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,.06);
+  margin-bottom:12px;
+}
+
+.searchGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1.4fr;
+  gap:10px;
+}
+
+input,select{
+  width:100%;
+  box-sizing:border-box;
+  border:2px solid #eee;
+  border-radius:14px;
+  padding:12px;
+  font-size:16px;
+  background:#fff;
+}
+
+.count{
+  margin:8px 2px 14px;
+  color:#666;
+  font-size:13px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px 24px;
+}
+
+.card{
+  background:#fff;
+  border-radius:18px;
+  min-height:170px;
+  display:grid;
+  grid-template-columns:42% 58%;
+  align-items:center;
+  padding:18px;
+  box-shadow:0 8px 20px rgba(0,0,0,.07);
+}
+
+.imgArea{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:150px;
+}
+
+.imgArea img{
+  max-width:100%;
+  max-height:150px;
+  object-fit:contain;
+}
+
+.noimg{
+  color:#aaa;
+  font-size:12px;
+}
+
+.info{
+  text-align:center;
+}
+
+.series{
+  display:inline-block;
+  background:#fff2c4;
+  color:#7a4b00;
+  border-radius:999px;
+  padding:4px 9px;
+  font-size:12px;
+  font-weight:900;
+  margin-bottom:7px;
+}
+
+.expansion{
+  display:inline-block;
+  background:#eef2ff;
+  color:#3343a0;
+  border-radius:999px;
+  padding:4px 9px;
+  font-size:12px;
+  font-weight:900;
+  margin-left:4px;
+  margin-bottom:7px;
+}
+
+.name{
+  font-weight:900;
+  font-size:18px;
+  margin-bottom:8px;
+}
+
+.priceLabel{
+  color:#e8344e;
+  font-weight:900;
+  font-size:14px;
+}
+
+.price{
+  color:#e8344e;
+  font-size:38px;
+  font-weight:900;
+  letter-spacing:.02em;
+}
+
+.yen{
+  color:#e8344e;
+  font-size:20px;
+  font-weight:900;
+}
+
+.updated{
+  margin-top:8px;
+  color:#777;
+  font-size:12px;
+}
+
+.footerNote{
+  margin:18px 0 30px;
+  text-align:center;
+  color:#777;
+  font-size:12px;
+  line-height:1.5;
+}
+
+@media(max-width:760px){
+  header{
+    padding:18px 10px 12px;
+  }
+
+  h1{
+    font-size:24px;
+  }
+
+  .notice{
+    font-size:12px;
+  }
+
+  .searchGrid{
+    grid-template-columns:1fr;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+
+  .card{
+    grid-template-columns:38% 62%;
+    min-height:130px;
+    padding:12px;
+    border-radius:16px;
+  }
+
+  .imgArea{
+    height:115px;
+  }
+
+  .imgArea img{
+    max-height:115px;
+  }
+
+  .name{
+    font-size:16px;
+    margin-bottom:6px;
+  }
+
+  .price{
+    font-size:30px;
+  }
+
+  .yen{
+    font-size:16px;
+  }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="shop">万代多賀城店カードコーナー</div>
+  <h1>未開封BOX買取価格</h1>
+
+  <div class="notice">
+    ※1グループ1日10BOXまでの制限がございます。<br>
+    ※再シュリンク品、またその可能性があると判断した場合はお返しする場合もございます。<br>
+    ※掲載価格は更新日時点の買取価格です。相場・在庫状況により予告なく変更となる場合がございます。
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="searchBox">
+    <div class="searchGrid">
+      <select id="seriesFilter">
+        <option value="">シリーズすべて</option>
+      </select>
+
+      <select id="expFilter">
+        <option value="">エキスパンションすべて</option>
+      </select>
+
+      <input id="q" placeholder="商品名で検索">
+    </div>
+  </div>
+
+  <div class="count"><span id="count">0</span>件表示中</div>
+  <div class="grid" id="grid"></div>
+
+  <div class="footerNote">
+    © 万代多賀城店カードコーナー<br>
+    表示価格は未開封BOXの買取価格です。
+  </div>
+</div>
+
+<script>
+const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSB_42xtLZN3QMh4lMHpcKkETRFiVZZ5MJZpPa7zGD_aRQIH_pVuj2GxlTlLlqkiDS6UJee3-xJ6nsi/pub?output=csv";
+
+const q = document.getElementById("q");
+const grid = document.getElementById("grid");
+const count = document.getElementById("count");
+const seriesFilter = document.getElementById("seriesFilter");
+const expFilter = document.getElementById("expFilter");
+
+let items = [];
+
+function escapeHtml(s){
+  return String(s ?? "")
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
+}
+
+function parseCSV(text){
+  const rows=[];
+  let row=[], cur="", inQ=false;
+
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(c === '"'){
+      if(inQ && text[i+1] === '"'){ cur+='"'; i++; }
+      else inQ=!inQ;
+    }else if(c === "," && !inQ){
+      row.push(cur); cur="";
+    }else if((c === "\n" || c === "\r") && !inQ){
+      if(cur !== "" || row.length){ row.push(cur); rows.push(row); }
+      cur=""; row=[];
+      if(c === "\r" && text[i+1] === "\n") i++;
+    }else{
+      cur+=c;
+    }
+  }
+  if(cur !== "" || row.length){ row.push(cur); rows.push(row); }
+
+  const header = rows.shift().map(h=>h.trim());
+
+  return rows.filter(r=>r.some(v=>String(v).trim() !== "")).map(r=>{
+    const o={};
+    header.forEach((h,i)=> o[h] = (r[i] ?? "").trim());
+    return o;
+  });
+}
+
+function toPrice(v){
+  const num = String(v ?? "").replace(/[^\d]/g,"");
+  if(!num) return "";
+  return Number(num).toLocaleString("ja-JP");
+}
+
+function uniq(arr){
+  return [...new Set(arr.filter(Boolean))].sort((a,b)=>a.localeCompare(b,"ja"));
+}
+
+function buildFilters(){
+  const seriesList = uniq(items.map(x=>x["シリーズ"]));
+  seriesFilter.innerHTML =
+    `<option value="">シリーズすべて</option>` +
+    seriesList.map(s=>`<option value="${escapeHtml(s)}">${escapeHtml(s)}</option>`).join("");
+
+  buildExpansionFilter();
+}
+
+function buildExpansionFilter(){
+  const selectedSeries = seriesFilter.value;
+
+  const exps = uniq(
+    items
+      .filter(x=>!selectedSeries || x["シリーズ"] === selectedSeries)
+      .map(x=>x["エキスパンションマーク"])
+  );
+
+  expFilter.innerHTML =
+    `<option value="">エキスパンションすべて</option>` +
+    exps.map(e=>`<option value="${escapeHtml(e)}">${escapeHtml(e)}</option>`).join("");
+}
+
+function render(){
+  const keyword = q.value.trim().toLowerCase();
+  const series = seriesFilter.value;
+  const exp = expFilter.value;
+
+  const filtered = items.filter(item=>{
+    const name = String(item["商品名"] ?? "").toLowerCase();
+    const itemSeries = item["シリーズ"] || "";
+    const itemExp = item["エキスパンションマーク"] || "";
+
+    if(series && itemSeries !== series) return false;
+    if(exp && itemExp !== exp) return false;
+    if(keyword && !name.includes(keyword)) return false;
+
+    return true;
+  });
+
+  count.textContent = filtered.length;
+
+  grid.innerHTML = filtered.map(item=>{
+    const series = item["シリーズ"] || "";
+    const exp = item["エキスパンションマーク"] || "";
+    const name = item["商品名"] || "";
+    const price = toPrice(item["買取価格"]);
+    const image = item["画像"] || "";
+    const updated = item["更新日時"] || "";
+
+    return `
+      <div class="card">
+        <div class="imgArea">
+          ${
+            image
+            ? `<img src="${escapeHtml(image)}" alt="${escapeHtml(name)}">`
+            : `<div class="noimg">画像なし</div>`
+          }
+        </div>
+
+        <div class="info">
+          <div>
+            ${series ? `<span class="series">${escapeHtml(series)}</span>` : ""}
+            ${exp ? `<span class="expansion">${escapeHtml(exp)}</span>` : ""}
+          </div>
+
+          <div class="name">${escapeHtml(name)}</div>
+
+          <div>
+            <span class="priceLabel">買取金額</span>
+            <span class="price">${price}</span>
+            <span class="yen">円</span>
+          </div>
+
+          ${updated ? `<div class="updated">更新日：${escapeHtml(updated)}</div>` : ""}
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+async function init(){
+  try{
+    const res = await fetch(CSV_URL, {cache:"no-store"});
+    const text = await res.text();
+    items = parseCSV(text);
+
+    buildFilters();
+    render();
+  }catch(e){
+    grid.innerHTML = `<div>データの読み込みに失敗しました。</div>`;
+  }
+}
+
+seriesFilter.addEventListener("change", ()=>{
+  buildExpansionFilter();
+  render();
+});
+
+expFilter.addEventListener("change", render);
+q.addEventListener("input", render);
+
+init();
+</script>
+</body>
+</html>
