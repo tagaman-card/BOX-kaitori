@@ -449,6 +449,8 @@ async function init(){
     const text = await res.text();
     items = parseCSV(text);
 
+    items.reverse();
+
     buildFilters();
     render();
   }catch(e){
