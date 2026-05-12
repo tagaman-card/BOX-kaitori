@@ -231,10 +231,42 @@ input,select{
     font-size:16px;
   }
 }
+  .marqueeWrap{
+  width:100%;
+  overflow:hidden;
+  background:linear-gradient(90deg,#d70000,#ff3b3b);
+  color:white;
+  font-weight:900;
+  border-bottom:3px solid #ffb3b3;
+}
+
+.marquee{
+  display:inline-block;
+  white-space:nowrap;
+  padding:10px 0;
+  font-size:15px;
+  animation:marqueeMove 20s linear infinite;
+}
+
+@keyframes marqueeMove{
+  0%{
+    transform:translateX(100%);
+  }
+  100%{
+    transform:translateX(-100%);
+  }
+}
 </style>
 </head>
 
 <body>
+  <div class="marqueeWrap">
+  <div class="marquee">
+    🔥 高価買取実施中！　
+    ポケモンカードBOX 強化買取中！　
+    最新弾大歓迎！
+  </div>
+</div>
 <header>
   <div class="shop">万代多賀城店カードコーナー</div>
   <h1>未開封BOX買取価格</h1>
